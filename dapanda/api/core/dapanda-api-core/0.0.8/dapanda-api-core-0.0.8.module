@@ -1,0 +1,260 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dapanda.api.core",
+    "module": "dapanda-api-core",
+    "version": "0.0.8",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-inject"
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-bom",
+          "version": {
+            "requires": "3.6.1"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        }
+      ],
+      "files": [
+        {
+          "name": "dapanda-api-core-0.0.8.jar",
+          "url": "dapanda-api-core-0.0.8.jar",
+          "size": 408720,
+          "sha512": "34d5cdca80487459c43f8bcfb2de00aefba888c5267bbfb63fe60188fa7081c5f80d5d487e841869b8a071553884a8c227cf7559db993a70e1de607eefbd6394",
+          "sha256": "424308efdb68a3f7da0ce7d7c16905fbbc415c0bf4b0f0feaa908005eb6ed4ab",
+          "sha1": "748d44754f0a261d9e48f05e1475f315f09ffacb",
+          "md5": "dfbac26179cc3314352f8ad91060466e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-http-server-netty"
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-http-client"
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-runtime"
+        },
+        {
+          "group": "io.micronaut.kotlin",
+          "module": "micronaut-kotlin-runtime"
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api"
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-validation"
+        },
+        {
+          "group": "io.micronaut.beanvalidation",
+          "module": "micronaut-hibernate-validator"
+        },
+        {
+          "group": "io.micronaut.sql",
+          "module": "micronaut-jdbc-hikari"
+        },
+        {
+          "group": "io.micronaut.micrometer",
+          "module": "micronaut-micrometer-core"
+        },
+        {
+          "group": "io.micronaut.cache",
+          "module": "micronaut-cache-caffeine"
+        },
+        {
+          "group": "io.micronaut.cache",
+          "module": "micronaut-cache-noop"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-reactive",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-slf4j",
+          "version": {
+            "requires": "1.6.4"
+          }
+        },
+        {
+          "group": "commons-logging",
+          "module": "commons-logging",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "mysql",
+          "module": "mysql-connector-java",
+          "version": {
+            "requires": "8.0.29"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-cio",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-inject"
+        },
+        {
+          "group": "io.micronaut",
+          "module": "micronaut-bom",
+          "version": {
+            "requires": "3.6.1"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic"
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.module",
+          "module": "jackson-module-kotlin"
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dapanda-api-core-0.0.8.jar",
+          "url": "dapanda-api-core-0.0.8.jar",
+          "size": 408720,
+          "sha512": "34d5cdca80487459c43f8bcfb2de00aefba888c5267bbfb63fe60188fa7081c5f80d5d487e841869b8a071553884a8c227cf7559db993a70e1de607eefbd6394",
+          "sha256": "424308efdb68a3f7da0ce7d7c16905fbbc415c0bf4b0f0feaa908005eb6ed4ab",
+          "sha1": "748d44754f0a261d9e48f05e1475f315f09ffacb",
+          "md5": "dfbac26179cc3314352f8ad91060466e"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "dapanda-api-core-0.0.8-sources.jar",
+          "url": "dapanda-api-core-0.0.8-sources.jar",
+          "size": 170331,
+          "sha512": "80946100360c981f0d4b0c923385ebddb2e283eb62cf9609f6549417c263bc7561a6b459b3cb371f9a91fe5bd2d17f928e051be3845d167bddf559089235a783",
+          "sha256": "c9955dcf0786ae4788904f703cd757d2941f331788e4e39feb793c9aab848f1c",
+          "sha1": "e4f4affab24a79814ecb83cd20bb6cd38b1e6c50",
+          "md5": "8d0dd951f97f951e65a2ae7153634826"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "dapanda-api-core-0.0.8-javadoc.jar",
+          "url": "dapanda-api-core-0.0.8-javadoc.jar",
+          "size": 573187,
+          "sha512": "72f0fd6d28f6a63d133faddbabf2556c7c1ffe1d9c801c416624ef53dc300d0d94e35e61270dad3e2350fb62f8921e58a5b77ed9029153a87615cd55bc981360",
+          "sha256": "a0f5a012b6d644c99d7afdf6e6e38a8052a46d3a9ff412f2fd9b610b337ddb28",
+          "sha1": "fcdb72380a2a0b3efda314aa3b42a596fc8c151e",
+          "md5": "9ecfb1c37429ffb5ecb88946503e5b40"
+        }
+      ]
+    }
+  ]
+}
